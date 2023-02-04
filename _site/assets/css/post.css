@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&family=VT323&display=swap");
+* {
+  font-family: inherit;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  -webkit-user-drag: none;
+  -moz-window-dragging: none;
+  -webkit-tap-highlight-color: transparent; }
+
+* img {
+  max-width: 100%; }
+
+html {
+  font-size: 62.5%; }
+
+html,
+body {
+  color: #ffffff;
+  font-family: "Cousine", monospace;
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: .055em;
+  background-color: #162c36; }
+
+.content a {
+  color: cyan;
+  border-bottom: 1px solid cyan; }
+
+header {
+  padding: 2rem 0 4rem 0; }
+
+.site-title {
+  font-size: 6rem;
+  line-height: 110%;
+  color: #8c91db;
+  font-family: "VT323", monospace; }
+
+main {
+  margin: 0 auto;
+  max-width: 650px;
+  padding: 3rem 0 4rem 0; }
+
+.article {
+  margin-bottom: 3rem; }
+  .article .date {
+    display: block;
+    font-size: 0.8rem; }
+
+.article-header {
+  margin-bottom: 4rem; }
+
+.article-title {
+  font-size: 1.7rem;
+  margin-bottom: 0.6rem;
+  line-height: 140%;
+  color: #ff1395;
+  font-family: "Press Start 2P", cursive; }
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+  .categories .category {
+    margin: 0 0.5rem 0.3rem 0;
+    display: block;
+    color: #000000;
+    background: #39c8b9;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    padding: 0 0.8rem;
+    line-height: 1.4rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out; }
+    .categories .category:hover {
+      transform: scale(1.1);
+      color: #ffffff;
+      background: #39c8b9; }
+
+/* markdown content */
+.content {
+  /* pre , code */
+  /* lbox */ }
+  .content * {
+    line-height: 180%; }
+  .content p {
+    margin: 0 0 1.75rem 0;
+    padding: 0; }
+  .content h1 {
+    font-size: 2rem; }
+  .content h2 {
+    font-size: 1.8rem; }
+  .content h3 {
+    font-size: 1.2rem; }
+  .content h4 {
+    font-size: 1.4rem; }
+  .content h5 {
+    font-size: 1.2rem; }
+  .content h6 {
+    font-size: 1rem; }
+  .content h1,
+  .content h2,
+  .content h3,
+  .content h4,
+  .content h5,
+  .content h6 {
+    margin: 1.75rem 0;
+    color: #ff1395;
+    font-family: "Press Start 2P", cursive; }
+  .content blockquote {
+    padding-left: 1.42188rem;
+    margin-bottom: 1.75rem;
+    font-style: italic;
+    font-weight: 400;
+    border-left: 0.3rem solid #c8ced2; }
+  .content strong {
+    font-weight: bold; }
+  .content ul {
+    margin-left: 1rem;
+    margin-bottom: 1.75rem; }
+  .content ol {
+    margin-left: 1.75rem;
+    margin-bottom: 1.75rem; }
+  .content ol * ol,
+  .content ul * ul {
+    margin-left: 1rem;
+    margin-bottom: 0; }
+  .content table {
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
+    border-collapse: collapse; }
+    .content table * {
+      border: 2px solid #c8ced2;
+      padding: 0.2rem; }
+    .content table th {
+      background-color: #5b5f5f;
+      color: #ffffff;
+      border: 2px solid #c8ced2; }
+  .content img {
+    max-width: 100%;
+    margin: 1rem 0; }
+    .content img .emoji {
+      margin: 0 !important; }
+  .content,
+  .content div,
+  .content div pre,
+  .content div pre code {
+    overflow-x: auto !important; }
+  .content pre {
+    background: #2c2c2b;
+    padding: 1rem 2rem;
+    margin-bottom: 1.75rem;
+    font-weight: bolder; }
+  .content code {
+    padding: 3px 5px;
+    color: #c8ced2;
+    font-weight: bolder;
+    white-space: pre;
+    background-color: #2c2c2b; }
+  .content img {
+    cursor: zoom-in; }
+
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none; }
+  #lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    padding: 4px;
+    background-color: black;
+    border: 2px solid white; }
+
+/* footer */
+footer {
+  font-size: 0.9rem; }
+  footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25em; }
+  footer i {
+    font-size: 1.4em;
+    font-style: normal; }
+
+@media screen and (max-width: 750px) {
+  body {
+    padding: 1.5rem; } }
+
+/*# sourceMappingURL=post.css.map */

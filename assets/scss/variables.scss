@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&family=VT323&display=swap');
+
+$theme-colors: (
+  "black": #000000,
+  "white": #ffffff,
+
+  "gray-1": #c8ced2,
+  "gray-2": #afb8c1,
+  "gray-3": #8c959f,
+  "gray-4": #6b7072,
+  "gray-5": #5b5f5f,
+  "gray-6": #4e5150,
+  "gray-7": #404341,
+  "gray-8": #363735,
+  "gray-9": #2c2c2b,
+  "gray-10": #201f1f,
+
+  "teal-1": #39d9c0,
+  "teal-2": #39c8b9,
+  "teal-3": #33afa6,
+  "teal-4": #298889,
+  "teal-5": #276769,
+  "teal-7": #1e494f,
+  "teal-8": #162c36,
+
+  "pink-1": #ffc2cd,
+  "pink-2": #ffa0b8,
+  "pink-3": #ff7fa9,
+  "pink-4": #ff5ca1,
+  "pink-5": #ff1395,
+  "pink-6": #e10083,
+  "pink-7": #c50078,
+  "pink-8": #ab006d,
+  "pink-9": #910065,
+  "pink-10": #7c005c,
+
+  "periwinkle-1": #e6e7f6,
+  "periwinkle-2": #c9cbed,
+  "periwinkle-3": #a9ace4,
+  "periwinkle-4": #8c91db,
+  "periwinkle-5": #6d74d2,
+  "periwinkle-6": #5156c7,
+  "periwinkle-7": #373dac,
+  "periwinkle-8": #25297f,
+  "periwinkle-9": #141754,
+  "periwinkle-10": #030420
+);
+
+$fonts: (
+  "site-title": ('VT323', monospace),
+  "body": ('Cousine', monospace),
+  "article-title": ('Press Start 2P', cursive),
+  "header": ('Press Start 2P', cursive)
+);

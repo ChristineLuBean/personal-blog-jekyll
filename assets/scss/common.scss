@@ -1,0 +1,80 @@
+@import "./variables.scss";
+
+#category-modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  display: none;
+  visibility: hidden;
+}
+
+#category-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  max-width: 850px;
+  max-height: 60vh;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: auto;
+  background: map-get($theme-colors, "gray-8");
+  display: none;
+  visibility: hidden;
+  line-height: 140%;
+}
+
+#category-modal-content {
+  display: relative;
+  max-height: calc(100% - 5rem);
+  overflow: auto;
+}
+
+#category-modal-title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  padding: 1rem;
+  color: map-get($theme-colors, "pink-5");
+}
+
+#category-modal-bg,
+#category-modal {
+  &.open {
+    display: block;
+    visibility: visible;
+  }
+}
+
+.modal-article,
+.modal-article-date {
+  display: block;
+  color: map-get($theme-colors, "gray-1");
+}
+
+.modal-article {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: map-get($theme-colors, "periwinkle-6");
+  }
+}
+
+.modal-article-date {
+  font-size: 0.8rem;
+}
+
+hr {
+  border-top: 2px dashed map-get($theme-colors, "gray-1");
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 1.75rem;
+}
